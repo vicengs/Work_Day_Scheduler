@@ -1,3 +1,10 @@
+/* ----------------------------- */
+/* Project  : Work Day Scheduler */
+/* File     : style.css          */
+/* Author   : Vicente Garcia     */
+/* Date     : 03/08/2022         */
+/* Modified : 03/09/2022         */
+/* ----------------------------- */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -69,10 +76,11 @@ textarea{
   transition: all .3s ease-in-out;
 }
 .btnUpdate{
-  background-color: red;
+  background-color: rgb(6, 174, 213, .85);
 }
 .focusUpdate, .onUpdate{
-  opacity: .8;
+  opacity: .85;
+  
 }
 /*.saveBtn i:hover {
   font-size: 30px;
