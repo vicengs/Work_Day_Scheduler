@@ -10,6 +10,7 @@ var timeBlocksArea = $(".container");
 var iniWorkHour = 9;
 var lastWorkHour = 17;
 var timeActivity = [];
+var txtChange = false;
 var loadTimeBlocks = function(){
     timeActivity = JSON.parse(localStorage.getItem('timeBlocks'));
     if (!timeActivity){
@@ -99,17 +100,31 @@ var getCurrentDay = function(showScreen){
     };
 };
 getCurrentDay(true);
-$(".time-blocks textarea").change(function(){
-    var blockChange = ".time-blocks #btn-" + this.id;
+var activateBtn = function(save, object, disable){
+    var blockChange = ".time-blocks #btn-" + object.id;
+    var removeClass = "fa-save";
+    var addClass = "fa-upload";
     $(blockChange)
     .addClass("btnUpdate")
-    .prop("disabled", false);
+    .prop("disabled", disable);
+    if (save){
+        $(blockChange).removeClass("btnUpdate");
+        removeClass = "fa-upload";
+        addClass = "fa-save";
+    };
     blockChange = blockChange + " .fa";
     $(blockChange)
-    .removeClass("fa-save")
-    .addClass("fa-upload");
+    .removeClass(removeClass)
+    .addClass(addClass);
+};
+$(".time-blocks textarea").change(function(){
+    console.log("entra porque algo cambio");
+    activateBtn(false, this, false);
+    txtChange = true;
+    idChange = this.id;
 });
 $(".time-blocks button").click(function(){
+    console.log("Boton activado");
     var numId = this.id.replace("btn-","");
     $(this)
     .removeClass("btnUpdate")
@@ -117,6 +132,8 @@ $(".time-blocks button").click(function(){
     $(this.firstChild)
     .removeClass("fa-upload")
     .addClass("fa-save");
+    console.log(".time-blocks #"+numId);
+    $(".time-blocks #"+numId).prop("disabled", false);
     saveTimeBlock(parseInt(numId),$(".time-blocks #" + numId).val().trim());
 });
 $(".time-blocks textarea").mouseover(function(){
@@ -127,7 +144,14 @@ $(".time-blocks textarea").mouseleave(function(){
 });
 $(".time-blocks textarea").focus(function(){
     $(this).addClass("focusUpdate");
+    activateBtn(false, this, true);
 });
 $(".time-blocks textarea").focusout(function(){
     $(this).removeClass("focusUpdate");
+    if (!txtChange){
+        activateBtn(true, this, true);
+    }else{
+        $(this).prop("disabled",true);
+    };
+    txtChange = false;
 });
