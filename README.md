@@ -48,7 +48,7 @@ https://vicengs.github.io/Work_Day_Scheduler/
 ![image text](https://github.com/vicengs/Work_Day_Scheduler/blob/main/assets/images/Screenshot_Work_Day_Scheduler.jpg)
 
 
---
+----
 
 
 # 05 Third-Party APIs: Work Day Scheduler
