@@ -3,13 +3,15 @@
 /* File     : style.css          */
 /* Author   : Vicente Garcia     */
 /* Date     : 03/08/2022         */
-/* Modified : 03/09/2022         */
+/* Modified : 03/11/2022         */
 /* ----------------------------- */
+/* Style body in general */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
+/* Style text areas */
 textarea{
   background: transparent;
   border: none;
@@ -19,6 +21,7 @@ textarea{
   padding: 10px;
   flex: auto;
 }
+/* Style area where title and date is showing */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -26,17 +29,17 @@ textarea{
   border-radius: 0;
   border-bottom: 10px solid black;
 }
-/*.description{
-  white-space: pre-wrap;
-}*/
+/* Style time block area */
 .time-block{
   text-align: center;
   border-radius: 15px;
 }
+/* Style each row */
 .row {
   white-space: pre-wrap;
   border-top: 1px solid white;
 }
+/* Style each hour */
 .hour {
   background-color: #ffffff;
   color: #000000;
@@ -46,19 +49,19 @@ textarea{
   text-align: center;
   margin-bottom: 0px;
 }
-
+/* Style text area when hte our is in the past */
 .past {
   background-color: #d3d3d3;
 }
-
+/* Style text area when hte our is in the present */
 .present {
   background-color: #ff6961;
 }
-
+/* Style text area when hte our is in the future */
 .future {
   background-color: #77dd77;
 }
-
+/* Style save button */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -69,23 +72,22 @@ textarea{
   width: 5%;
   font-size: 20px;
 }
+/* Style when mouse is over save button */
 .saveBtn:hover{
   box-shadow: 2px 1px 7px black;
   top: -1px;
   font-size: 30px;
   transition: all .3s ease-in-out;
 }
+/* Style button when something changed and will be updated */
 .btnUpdate{
   background-color: rgb(6, 174, 213, .85);
 }
+/* Style opacity in button when textarea is focused or updated  */
 .focusUpdate, .onUpdate{
   opacity: .85;
-  
 }
-/*.saveBtn i:hover {
-  font-size: 30px;
-  transition: all .3s ease-in-out;
-}*/
+/* Print a line at the botton */
 .line{
   border-bottom: 1px solid black;
 }

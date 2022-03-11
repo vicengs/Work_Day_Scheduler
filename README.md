@@ -1,4 +1,51 @@
+# Work Day Scheduler
 
+## Purpose
+An application to save events for each hour of the day
+
+## Built with
+* HTML
+* CSS (Advanced)
+* Java Script
+* Web API's (DOM)
+* Third-Party API's
+
+## Website
+https://vicengs.github.io/Work_Day_Scheduler/
+
+## Contribution
+Made by Vicente Garcia Sepulveda
+
+# Description
+
+Application made from starter code
+
+* Functionality using functions in JavaScript
+* Third-Party API's to generate dinamic HTML (jQuery)
+* Loops to validate and generate elements
+* Style with Bootstrap
+* Third-Party API's to generate dinamic buttons functions (jQuery)
+* Performance using variables and functions
+* Comments of the code
+
+# Instructions (Solved)
+## SSH to clone:
+```
+git@github.com:vicengs/Work_Day_Scheduler.git
+```
+## GitHub repository:
+```
+https://github.com/vicengs/Work_Day_Scheduler
+```
+## Live URL:
+```
+https://vicengs.github.io/Work_Day_Scheduler/
+```
+## Screenshoots
+
+![image text](https://github.com/vicengs/Work_Day_Scheduler/blob/main/assets/images/Screenshot_Quiz_1.jpg)
+
+---------
 
 # 05 Third-Party APIs: Work Day Scheduler
 
