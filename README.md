@@ -16,6 +16,7 @@ https://vicengs.github.io/Work_Day_Scheduler/
 ## Contribution
 Made by Vicente Garcia Sepulveda
 
+
 # Description
 
 Application made from starter code
@@ -27,6 +28,7 @@ Application made from starter code
 * Third-Party API's to generate dinamic buttons functions (jQuery)
 * Performance using variables and functions
 * Comments of the code
+
 
 # Instructions (Solved)
 ## SSH to clone:
@@ -41,11 +43,13 @@ https://github.com/vicengs/Work_Day_Scheduler
 ```
 https://vicengs.github.io/Work_Day_Scheduler/
 ```
-## Screenshoots
+## Screenshoot
 
 ![image text](https://github.com/vicengs/Work_Day_Scheduler/blob/main/assets/images/Screenshot_Work_Day_Scheduler.jpg)
 
----------
+
+--
+
 
 # 05 Third-Party APIs: Work Day Scheduler
 
