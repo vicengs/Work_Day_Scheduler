@@ -43,7 +43,7 @@ https://vicengs.github.io/Work_Day_Scheduler/
 ```
 ## Screenshoots
 
-![image text](https://github.com/vicengs/Work_Day_Scheduler/blob/main/assets/images/Screenshot_Quiz_1.jpg)
+![image text](https://github.com/vicengs/Work_Day_Scheduler/blob/main/assets/images/Screenshot_Work_Day_Scheduler.jpg)
 
 ---------
 
